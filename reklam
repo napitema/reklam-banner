@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Reklám Banner</title>
+<style>
+.custom-ad-banner { 
+  max-width: 100%; 
+  font-family: Arial, sans-serif; 
+}
+.custom-ad-banner .ad-frame {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  background: linear-gradient(135deg, #0f1724, #071022 80%);
+  border-radius: 16px; padding: 16px; color: #fff; box-sizing: border-box;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+.custom-ad-banner .ad-left { flex: 2; padding: 8px; }
+.custom-ad-banner .ad-eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #94a3b8; margin-bottom: 4px; }
+.custom-ad-banner .ad-headline { font-size: 18px; font-weight: bold; line-height: 1.2; margin-bottom: 6px; }
+.custom-ad-banner .ad-sub { font-size: 14px; color: #cbd5e1; }
+.custom-ad-banner .ad-right { flex: 1; display: flex; justify-content: center; align-items: center; padding: 8px; }
+.custom-ad-banner .ad-cta {
+  background: linear-gradient(90deg, #f59e0b, #ffb86b);
+  color: #000; font-weight: bold; text-transform: uppercase;
+  padding: 10px 16px; border-radius: 12px; cursor: pointer;
+  box-shadow: 0 4px 12px rgba(245,158,11,0.3);
+  font-size: 14px; text-align: center;
+}
+.custom-ad-banner a { text-decoration: none; color: inherit; display: block; }
+
+/* Fix elválasztó blokk */
+.banner-separator {
+  display:block;
+  width:100%;
+  height:40px; /* mennyi hely legyen a banner alatt */
+  background:transparent;
+  clear:both;
+}
+
+@media (max-width: 600px) {
+  .custom-ad-banner .ad-frame { flex-direction: column; text-align: center; }
+  .custom-ad-banner .ad-left, .custom-ad-banner .ad-right { flex: 100%; }
+  .custom-ad-banner .ad-headline { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+  <div class="custom-ad-banner">
+  <a href="https://penzugyilehetoseg.webnode.hu/" target="_blank" rel="noopener noreferrer">
+    <div class="ad-frame">
+      <div class="ad-left">
+        <div class="ad-eyebrow">Eleged van?</div>
+        <div class="ad-headline">Eleged van a pénzhiányból, a kiszolgáltatottságból és az ingázásból?</div>
+        <div class="ad-sub">Itt van életed egyik legnagyobb lehetősége. Kattints a részletekért.</div>
+      </div>
+      <div class="ad-right">
+        <div class="ad-cta">Részletek</div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- Láthatatlan elválasztó, hogy mindig legyen hely a banner alatt -->
+<div class="banner-separator"></div>
+</body>
+</html>
